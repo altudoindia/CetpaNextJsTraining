@@ -1,0 +1,47 @@
+@import '_colors';
+footer {
+    background: #151C22;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top:30px ;
+    .site-navigation{
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            li a {
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                padding: 4px 0;
+                display: block;
+                font-weight: 300;
+            }
+            > li {
+                list-style: none;
+                padding: 0 25px;
+                > a {
+                    font-size: 18px;
+                    color: #e32c2c;
+                    font-weight: 400;
+                }
+            }
+          
+        }
+    }
+    .copyright{
+        padding: 15px 0;
+    }
+}
+.footer-logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    img{
+        max-width: 120px;
+    }
+}
+
+

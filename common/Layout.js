@@ -1,17 +1,20 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
-import Navbar from './Navbar'
+import Container from './PageStructure/Container'
 
 const Layout = ({children}) => {
+
   return (
-    <>
-        <div className='container'>
-            <Header/>
-            <Navbar />
-            {children}
-            <Footer/>
-        </div>
+    <>         
+      <Header />       
+        <main>
+          <Container> 
+          {children}
+          </Container>
+        </main>
+      
+      <Footer />
     </>
   )
 }

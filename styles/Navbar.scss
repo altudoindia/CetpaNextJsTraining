@@ -1,0 +1,141 @@
+/*============================================================
+            Navigation 
+=============================================================*/
+.site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header{
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+   
+    li{
+        display: inline-block;
+        margin: 0 15px;
+        position: relative;
+        a{
+            font-family: "Solway", serif;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 30px 0;
+            line-height: 1;
+            border-bottom: 2px solid #0000;
+           
+        }
+        &:hover {
+            color: #000;
+            border-color: #084298;
+            .submenu {
+                height: auto;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .submenu {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        min-width: 200px;
+        left: 0;
+        top: 100%;
+        transition: all .3s ease-in-out;
+        box-shadow: 0 3px 9px 0 rgb(48 48 48 / 20%);
+        border: 1px solid #d7d7d7;
+        border-radius: 0 0 10px 10px;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+       ul {
+            padding: 0;
+            display: block;
+            li {
+                display: block;
+                margin: 0;
+                a {
+                    color: #333;
+                    padding: 10px 15px;
+                    &:hover {
+                        color: #0d6efd;
+                    }
+                }
+            }
+        }
+        
+       
+    }
+}
+}
+/*============================================================
+            Utility Navigation 
+=============================================================*/
+.component-utility{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul{
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        padding: 21px 0;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 20px;
+            line-height: 1;
+            border-radius: 5px;
+            border: 1px solid #084298;
+            margin: 0 10px;
+            transition: 0.2s ease-in-out;
+           
+        }
+        &:hover{
+           >a {
+                background-color: #055160;
+                color: #fff;
+            }
+            ul.submenu {
+                height: auto;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    ul.submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #084298;
+        padding: 0;
+        margin: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        li {
+            display: block;
+            padding: 0;
+            a {
+                margin: 0;
+                border: none;
+                display: block;              
+            }
+            &:hover a{
+                background: #fff;
+                color: #084298;
+                border-radius: 0;
+            }
+        }
+    }
+} 
+
+

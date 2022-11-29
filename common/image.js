@@ -10,12 +10,3 @@ const Image = (props) => {
 }
 
 export default Image
-
-
-
-// props = {
-//     src: '',
-//     alt: '',
-//     width: '',
-//     height: 
-// }
