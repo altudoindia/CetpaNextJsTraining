@@ -16,10 +16,17 @@ body{
 img{
     max-width: 100%;
 }
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+    h1 {
+        color: #084298;
+    }
+}
+
 
 .cardList{
     .card-image{
-        text-align: center;
        img{
         max-height: 200px;
        }
@@ -31,5 +38,6 @@ img{
         margin-bottom: 15px;
         padding: 15px;
         border-radius: 5px;
+        text-align: center;
     }
 }

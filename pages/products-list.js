@@ -18,14 +18,16 @@ const ProductCard = (props) => {
         <div>
             <div className="cardList">
             <Container>
-                   
-            <h2>Product List</h2>
+                <div className="page-title"> <h1>Product List</h1></div>    
+           
 
             {productData.map(item => (
                  <div className="col-md-3 ">
                     <div className="porduct-card">
-                    <Link href={`/product-details/${item.id}`} className="card-image"><Image src={item.image} alt="Vercel Logo"  />    </Link>
-                    <div className="card-title">{item.title} </div>
+                    <Link href={`/products/${item.id}`} className="card-image">
+                        <Image src={item.image} alt="Vercel Logo"  />  
+                        <div className="card-title">{item.title} </div>
+                    </Link>
                     </div>
                 </div> 
             ))}
