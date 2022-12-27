@@ -6,7 +6,8 @@ export const getServerSideProps = async (context) => {
     const id = context.params.id;
     console.log('id' - id);
     //api call
-    const response = await fetch('https://fakestoreapi.com/products/'+id);
+    const response = await fetch(process.env.API_URL + id);
+    //const response = await fetch(process.env.API_URL);
     // console.log(response);
     const data = await response.json(); //to convert stringified json to parsed json
     // console.log(data);
@@ -20,6 +21,7 @@ const ProductId = ({productData}) => {
         <div>
                 <h2>This is product page - {productData.title}</h2>
                 <Image src={productData.image} alt="Vercel Logo"  />  
+
             </div>
     )
 }

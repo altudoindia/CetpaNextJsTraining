@@ -41,3 +41,37 @@ img{
         text-align: center;
     }
 }
+h1{
+    font-size: 4.5rem;
+    color: #084298;
+}
+h2{
+    font-size: 4rem;
+    color: #084298;
+}
+h3{
+    font-size: 3.5rem;
+    color: #084298;
+}
+h4{
+    font-size: 3rem;
+    color: #084298;
+}
+.component-title{
+    h1{
+        font-size: 4.5rem;
+        color: #084298;
+    }
+}
+.section-bg{
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius:10px ;
+    border: 1px solid rgb(155, 53, 53);
+    box-shadow: #084298;
+}
+.ragistration-form {
+    max-width: 500px;
+    margin: 0 auto;
+}

@@ -7,19 +7,19 @@ const Utility = () =>{
             <div className="col-md-3 component-utility">
             <ul className=" d-flex">
                 <li className="nav-item">
-                <Link href="/">Login</Link>
-                    <ul className="submenu">
+                <Link href="/userlogin">Login</Link>
+                    {/* <ul className="submenu">
                         <li className="nav-item">
-                        <Link href="/">User Login </Link>
+                        <Link href="">User Login </Link>
                         </li>
                         <li className="nav-item">
-                        <Link href="/about">Admisistrator</Link>
+                        <Link href="/userlogin">Admisistrator</Link>
                         </li>
                     
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="nav-item">
-                <Link href="/about">Register</Link>
+                <Link href="/ragistration">Register</Link>
                 </li>
             
              </ul>
